@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // stock
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1247, 689);
-            this.Name = "stock";
-            this.Text = "stock";
-            this.ResumeLayout(false);
+
 
         }
 
         #endregion
+
+
     }
 }
