@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-
+            this.SuspendLayout();
+            // 
+            // stock
+            // 
+            this.ClientSize = new System.Drawing.Size(1193, 625);
+            this.Name = "stock";
+            this.ResumeLayout(false);
 
         }
 
