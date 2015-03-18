@@ -64,12 +64,48 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ClientDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="clientNameFromId.cs">
+      <DependentUpon>clientNameFromId.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clientNameFromId.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clientNameFromId.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CodeFile1.cs" />
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBConnection.cs" />
+    <Compile Include="everythingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>everythingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProdctListMainDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdctListMainDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProductDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -79,11 +115,21 @@
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="stock.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="stock.Designer.cs">
       <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Supplier.cs" />
     <Compile Include="SuppliersDataSet.Designer.cs">
@@ -91,8 +137,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SuppliersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SupplierSentListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupplierSentListDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +171,61 @@
     <None Include="ClientDataSet.xss">
       <DependentUpon>ClientDataSet.xsd</DependentUpon>
     </None>
+    <None Include="clientNameFromId.xsc">
+      <DependentUpon>clientNameFromId.xsd</DependentUpon>
+    </None>
+    <None Include="clientNameFromId.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clientNameFromId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clientNameFromId.xss">
+      <DependentUpon>clientNameFromId.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="everythingDataSet.xsc">
+      <DependentUpon>everythingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="everythingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>everythingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="everythingDataSet.xss">
+      <DependentUpon>everythingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataset.xsc">
+      <DependentUpon>OrderDataset.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrderDataset.xss">
+      <DependentUpon>OrderDataset.xsd</DependentUpon>
+    </None>
+    <None Include="ProdctListMainDataSet1.xsc">
+      <DependentUpon>ProdctListMainDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProdctListMainDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProdctListMainDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProdctListMainDataSet1.xss">
+      <DependentUpon>ProdctListMainDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="ProductDataSet.xsc">
       <DependentUpon>ProductDataSet.xsd</DependentUpon>
     </None>
@@ -128,6 +237,30 @@
     <None Include="ProductDataSet.xss">
       <DependentUpon>ProductDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\GreenwitchButchersApp.ClientDataSetTableAdapters.ClientsTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.ClientDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.ClientDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.ClientsTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.OrderTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.ProductListTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.ProductTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.StaffTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.SupplierSentListTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.SupplierTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.everythingDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.OrderDatasetTableAdapters.OrderTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.OrderDatasetTableAdapters.ProductListTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.OrderDatasetTableAdapters.SupplierSentListTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.OrderDatasetTableAdapters.SupplierTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.OrderDatasetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.OrderDatasetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.ProductDataSetTableAdapters.ProductTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.ProductDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.ProductDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.SuppliersDataSetTableAdapters.SupplierTableAdapter.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.SuppliersDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\GreenwitchButchersApp.SuppliersDataSetTableAdapters.TableAdapterManager.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -137,6 +270,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StaffDataSet1.xsc">
+      <DependentUpon>StaffDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StaffDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffDataSet1.xss">
+      <DependentUpon>StaffDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StockDataSet.xsc">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockDataSet.xss">
+      <DependentUpon>StockDataSet.xsd</DependentUpon>
+    </None>
     <None Include="SuppliersDataSet.xsc">
       <DependentUpon>SuppliersDataSet.xsd</DependentUpon>
     </None>
@@ -147,6 +302,17 @@
     </None>
     <None Include="SuppliersDataSet.xss">
       <DependentUpon>SuppliersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SupplierSentListDataSet.xsc">
+      <DependentUpon>SupplierSentListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SupplierSentListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupplierSentListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SupplierSentListDataSet.xss">
+      <DependentUpon>SupplierSentListDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

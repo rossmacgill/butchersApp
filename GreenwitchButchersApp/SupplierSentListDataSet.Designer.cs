@@ -20,17 +20,17 @@ namespace GreenwitchButchersApp {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("SuppliersDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("SupplierSentListDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class SuppliersDataSet : global::System.Data.DataSet {
+    public partial class SupplierSentListDataSet : global::System.Data.DataSet {
         
-        private SupplierDataTable tableSupplier;
+        private SupplierSentListDataTable tableSupplierSentList;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public SuppliersDataSet() {
+        public SupplierSentListDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace GreenwitchButchersApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected SuppliersDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected SupplierSentListDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace GreenwitchButchersApp {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Supplier"] != null)) {
-                    base.Tables.Add(new SupplierDataTable(ds.Tables["Supplier"]));
+                if ((ds.Tables["SupplierSentList"] != null)) {
+                    base.Tables.Add(new SupplierSentListDataTable(ds.Tables["SupplierSentList"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace GreenwitchButchersApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SupplierDataTable Supplier {
+        public SupplierSentListDataTable SupplierSentList {
             get {
-                return this.tableSupplier;
+                return this.tableSupplierSentList;
             }
         }
         
@@ -127,7 +127,7 @@ namespace GreenwitchButchersApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            SuppliersDataSet cln = ((SuppliersDataSet)(base.Clone()));
+            SupplierSentListDataSet cln = ((SupplierSentListDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace GreenwitchButchersApp {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Supplier"] != null)) {
-                    base.Tables.Add(new SupplierDataTable(ds.Tables["Supplier"]));
+                if ((ds.Tables["SupplierSentList"] != null)) {
+                    base.Tables.Add(new SupplierSentListDataTable(ds.Tables["SupplierSentList"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace GreenwitchButchersApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSupplier = ((SupplierDataTable)(base.Tables["Supplier"]));
+            this.tableSupplierSentList = ((SupplierSentListDataTable)(base.Tables["SupplierSentList"]));
             if ((initTable == true)) {
-                if ((this.tableSupplier != null)) {
-                    this.tableSupplier.InitVars();
+                if ((this.tableSupplierSentList != null)) {
+                    this.tableSupplierSentList.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace GreenwitchButchersApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "SuppliersDataSet";
+            this.DataSetName = "SupplierSentListDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/SuppliersDataSet.xsd";
+            this.Namespace = "http://tempuri.org/SupplierSentListDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSupplier = new SupplierDataTable();
-            base.Tables.Add(this.tableSupplier);
+            this.tableSupplierSentList = new SupplierSentListDataTable();
+            base.Tables.Add(this.tableSupplierSentList);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeSupplier() {
+        private bool ShouldSerializeSupplierSentList() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace GreenwitchButchersApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            SuppliersDataSet ds = new SuppliersDataSet();
+            SupplierSentListDataSet ds = new SupplierSentListDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,27 @@ namespace GreenwitchButchersApp {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void SupplierRowChangeEventHandler(object sender, SupplierRowChangeEvent e);
+        public delegate void SupplierSentListRowChangeEventHandler(object sender, SupplierSentListRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SupplierDataTable : global::System.Data.TypedTableBase<SupplierRow> {
+        public partial class SupplierSentListDataTable : global::System.Data.TypedTableBase<SupplierSentListRow> {
+            
+            private global::System.Data.DataColumn columnSupplierSentListId;
             
             private global::System.Data.DataColumn columnSupplierID;
             
-            private global::System.Data.DataColumn columnSupplier_Name;
+            private global::System.Data.DataColumn columnOrderID;
             
-            private global::System.Data.DataColumn columnSupplier_Address;
-            
-            private global::System.Data.DataColumn columnSupplier_Postcode;
-            
-            private global::System.Data.DataColumn columnSupplier_Tel;
-            
-            private global::System.Data.DataColumn columnProduct_Type;
+            private global::System.Data.DataColumn columnConfirmed;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierDataTable() {
-                this.TableName = "Supplier";
+            public SupplierSentListDataTable() {
+                this.TableName = "SupplierSentList";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +298,7 @@ namespace GreenwitchButchersApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal SupplierDataTable(global::System.Data.DataTable table) {
+            internal SupplierSentListDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,9 +315,17 @@ namespace GreenwitchButchersApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected SupplierDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected SupplierSentListDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SupplierSentListIdColumn {
+                get {
+                    return this.columnSupplierSentListId;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -334,41 +338,17 @@ namespace GreenwitchButchersApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Supplier_NameColumn {
+            public global::System.Data.DataColumn OrderIDColumn {
                 get {
-                    return this.columnSupplier_Name;
+                    return this.columnOrderID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Supplier_AddressColumn {
+            public global::System.Data.DataColumn ConfirmedColumn {
                 get {
-                    return this.columnSupplier_Address;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Supplier_PostcodeColumn {
-                get {
-                    return this.columnSupplier_Postcode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Supplier_TelColumn {
-                get {
-                    return this.columnSupplier_Tel;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Product_TypeColumn {
-                get {
-                    return this.columnProduct_Type;
+                    return this.columnConfirmed;
                 }
             }
             
@@ -383,57 +363,55 @@ namespace GreenwitchButchersApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierRow this[int index] {
+            public SupplierSentListRow this[int index] {
                 get {
-                    return ((SupplierRow)(this.Rows[index]));
+                    return ((SupplierSentListRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SupplierRowChangeEventHandler SupplierRowChanging;
+            public event SupplierSentListRowChangeEventHandler SupplierSentListRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SupplierRowChangeEventHandler SupplierRowChanged;
+            public event SupplierSentListRowChangeEventHandler SupplierSentListRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SupplierRowChangeEventHandler SupplierRowDeleting;
+            public event SupplierSentListRowChangeEventHandler SupplierSentListRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event SupplierRowChangeEventHandler SupplierRowDeleted;
+            public event SupplierSentListRowChangeEventHandler SupplierSentListRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddSupplierRow(SupplierRow row) {
+            public void AddSupplierSentListRow(SupplierSentListRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierRow AddSupplierRow(string Supplier_Name, string Supplier_Address, string Supplier_Postcode, string Supplier_Tel, string Product_Type) {
-                SupplierRow rowSupplierRow = ((SupplierRow)(this.NewRow()));
+            public SupplierSentListRow AddSupplierSentListRow(int SupplierID, int OrderID, int Confirmed) {
+                SupplierSentListRow rowSupplierSentListRow = ((SupplierSentListRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Supplier_Name,
-                        Supplier_Address,
-                        Supplier_Postcode,
-                        Supplier_Tel,
-                        Product_Type};
-                rowSupplierRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSupplierRow);
-                return rowSupplierRow;
+                        SupplierID,
+                        OrderID,
+                        Confirmed};
+                rowSupplierSentListRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSupplierSentListRow);
+                return rowSupplierSentListRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierRow FindBySupplierID(int SupplierID) {
-                return ((SupplierRow)(this.Rows.Find(new object[] {
-                            SupplierID})));
+            public SupplierSentListRow FindBySupplierSentListId(int SupplierSentListId) {
+                return ((SupplierSentListRow)(this.Rows.Find(new object[] {
+                            SupplierSentListId})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SupplierDataTable cln = ((SupplierDataTable)(base.Clone()));
+                SupplierSentListDataTable cln = ((SupplierSentListDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,74 +419,63 @@ namespace GreenwitchButchersApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SupplierDataTable();
+                return new SupplierSentListDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnSupplierSentListId = base.Columns["SupplierSentListId"];
                 this.columnSupplierID = base.Columns["SupplierID"];
-                this.columnSupplier_Name = base.Columns["Supplier_Name"];
-                this.columnSupplier_Address = base.Columns["Supplier_Address"];
-                this.columnSupplier_Postcode = base.Columns["Supplier_Postcode"];
-                this.columnSupplier_Tel = base.Columns["Supplier_Tel"];
-                this.columnProduct_Type = base.Columns["Product_Type"];
+                this.columnOrderID = base.Columns["OrderID"];
+                this.columnConfirmed = base.Columns["Confirmed"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnSupplierSentListId = new global::System.Data.DataColumn("SupplierSentListId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSupplierSentListId);
                 this.columnSupplierID = new global::System.Data.DataColumn("SupplierID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSupplierID);
-                this.columnSupplier_Name = new global::System.Data.DataColumn("Supplier_Name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSupplier_Name);
-                this.columnSupplier_Address = new global::System.Data.DataColumn("Supplier_Address", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSupplier_Address);
-                this.columnSupplier_Postcode = new global::System.Data.DataColumn("Supplier_Postcode", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSupplier_Postcode);
-                this.columnSupplier_Tel = new global::System.Data.DataColumn("Supplier_Tel", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSupplier_Tel);
-                this.columnProduct_Type = new global::System.Data.DataColumn("Product_Type", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProduct_Type);
+                this.columnOrderID = new global::System.Data.DataColumn("OrderID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOrderID);
+                this.columnConfirmed = new global::System.Data.DataColumn("Confirmed", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnConfirmed);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnSupplierID}, true));
-                this.columnSupplierID.AutoIncrement = true;
-                this.columnSupplierID.AutoIncrementSeed = -1;
-                this.columnSupplierID.AutoIncrementStep = -1;
-                this.columnSupplierID.AllowDBNull = false;
-                this.columnSupplierID.ReadOnly = true;
-                this.columnSupplierID.Unique = true;
-                this.columnSupplier_Name.MaxLength = 2147483647;
-                this.columnSupplier_Address.MaxLength = 2147483647;
-                this.columnSupplier_Postcode.MaxLength = 10;
-                this.columnSupplier_Tel.MaxLength = 2147483647;
-                this.columnProduct_Type.MaxLength = 2147483647;
+                                this.columnSupplierSentListId}, true));
+                this.columnSupplierSentListId.AutoIncrement = true;
+                this.columnSupplierSentListId.AutoIncrementSeed = -1;
+                this.columnSupplierSentListId.AutoIncrementStep = -1;
+                this.columnSupplierSentListId.AllowDBNull = false;
+                this.columnSupplierSentListId.ReadOnly = true;
+                this.columnSupplierSentListId.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierRow NewSupplierRow() {
-                return ((SupplierRow)(this.NewRow()));
+            public SupplierSentListRow NewSupplierSentListRow() {
+                return ((SupplierSentListRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SupplierRow(builder);
+                return new SupplierSentListRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SupplierRow);
+                return typeof(SupplierSentListRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SupplierRowChanged != null)) {
-                    this.SupplierRowChanged(this, new SupplierRowChangeEvent(((SupplierRow)(e.Row)), e.Action));
+                if ((this.SupplierSentListRowChanged != null)) {
+                    this.SupplierSentListRowChanged(this, new SupplierSentListRowChangeEvent(((SupplierSentListRow)(e.Row)), e.Action));
                 }
             }
             
@@ -516,8 +483,8 @@ namespace GreenwitchButchersApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SupplierRowChanging != null)) {
-                    this.SupplierRowChanging(this, new SupplierRowChangeEvent(((SupplierRow)(e.Row)), e.Action));
+                if ((this.SupplierSentListRowChanging != null)) {
+                    this.SupplierSentListRowChanging(this, new SupplierSentListRowChangeEvent(((SupplierSentListRow)(e.Row)), e.Action));
                 }
             }
             
@@ -525,8 +492,8 @@ namespace GreenwitchButchersApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SupplierRowDeleted != null)) {
-                    this.SupplierRowDeleted(this, new SupplierRowChangeEvent(((SupplierRow)(e.Row)), e.Action));
+                if ((this.SupplierSentListRowDeleted != null)) {
+                    this.SupplierSentListRowDeleted(this, new SupplierSentListRowChangeEvent(((SupplierSentListRow)(e.Row)), e.Action));
                 }
             }
             
@@ -534,14 +501,14 @@ namespace GreenwitchButchersApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SupplierRowDeleting != null)) {
-                    this.SupplierRowDeleting(this, new SupplierRowChangeEvent(((SupplierRow)(e.Row)), e.Action));
+                if ((this.SupplierSentListRowDeleting != null)) {
+                    this.SupplierSentListRowDeleting(this, new SupplierSentListRowChangeEvent(((SupplierSentListRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveSupplierRow(SupplierRow row) {
+            public void RemoveSupplierSentListRow(SupplierSentListRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -550,7 +517,7 @@ namespace GreenwitchButchersApp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                SuppliersDataSet ds = new SuppliersDataSet();
+                SupplierSentListDataSet ds = new SupplierSentListDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -568,7 +535,7 @@ namespace GreenwitchButchersApp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SupplierDataTable";
+                attribute2.FixedValue = "SupplierSentListDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -612,166 +579,110 @@ namespace GreenwitchButchersApp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SupplierRow : global::System.Data.DataRow {
+        public partial class SupplierSentListRow : global::System.Data.DataRow {
             
-            private SupplierDataTable tableSupplier;
+            private SupplierSentListDataTable tableSupplierSentList;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal SupplierRow(global::System.Data.DataRowBuilder rb) : 
+            internal SupplierSentListRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSupplier = ((SupplierDataTable)(this.Table));
+                this.tableSupplierSentList = ((SupplierSentListDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int SupplierSentListId {
+                get {
+                    return ((int)(this[this.tableSupplierSentList.SupplierSentListIdColumn]));
+                }
+                set {
+                    this[this.tableSupplierSentList.SupplierSentListIdColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int SupplierID {
                 get {
-                    return ((int)(this[this.tableSupplier.SupplierIDColumn]));
-                }
-                set {
-                    this[this.tableSupplier.SupplierIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Supplier_Name {
-                get {
                     try {
-                        return ((string)(this[this.tableSupplier.Supplier_NameColumn]));
+                        return ((int)(this[this.tableSupplierSentList.SupplierIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Supplier_Name\' in table \'Supplier\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SupplierID\' in table \'SupplierSentList\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSupplier.Supplier_NameColumn] = value;
+                    this[this.tableSupplierSentList.SupplierIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Supplier_Address {
+            public int OrderID {
                 get {
                     try {
-                        return ((string)(this[this.tableSupplier.Supplier_AddressColumn]));
+                        return ((int)(this[this.tableSupplierSentList.OrderIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Supplier_Address\' in table \'Supplier\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'OrderID\' in table \'SupplierSentList\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSupplier.Supplier_AddressColumn] = value;
+                    this[this.tableSupplierSentList.OrderIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Supplier_Postcode {
+            public int Confirmed {
                 get {
                     try {
-                        return ((string)(this[this.tableSupplier.Supplier_PostcodeColumn]));
+                        return ((int)(this[this.tableSupplierSentList.ConfirmedColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Supplier_Postcode\' in table \'Supplier\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Confirmed\' in table \'SupplierSentList\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSupplier.Supplier_PostcodeColumn] = value;
+                    this[this.tableSupplierSentList.ConfirmedColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Supplier_Tel {
-                get {
-                    try {
-                        return ((string)(this[this.tableSupplier.Supplier_TelColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Supplier_Tel\' in table \'Supplier\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSupplier.Supplier_TelColumn] = value;
-                }
+            public bool IsSupplierIDNull() {
+                return this.IsNull(this.tableSupplierSentList.SupplierIDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Product_Type {
-                get {
-                    try {
-                        return ((string)(this[this.tableSupplier.Product_TypeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Product_Type\' in table \'Supplier\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSupplier.Product_TypeColumn] = value;
-                }
+            public void SetSupplierIDNull() {
+                this[this.tableSupplierSentList.SupplierIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSupplier_NameNull() {
-                return this.IsNull(this.tableSupplier.Supplier_NameColumn);
+            public bool IsOrderIDNull() {
+                return this.IsNull(this.tableSupplierSentList.OrderIDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSupplier_NameNull() {
-                this[this.tableSupplier.Supplier_NameColumn] = global::System.Convert.DBNull;
+            public void SetOrderIDNull() {
+                this[this.tableSupplierSentList.OrderIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSupplier_AddressNull() {
-                return this.IsNull(this.tableSupplier.Supplier_AddressColumn);
+            public bool IsConfirmedNull() {
+                return this.IsNull(this.tableSupplierSentList.ConfirmedColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSupplier_AddressNull() {
-                this[this.tableSupplier.Supplier_AddressColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSupplier_PostcodeNull() {
-                return this.IsNull(this.tableSupplier.Supplier_PostcodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSupplier_PostcodeNull() {
-                this[this.tableSupplier.Supplier_PostcodeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSupplier_TelNull() {
-                return this.IsNull(this.tableSupplier.Supplier_TelColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSupplier_TelNull() {
-                this[this.tableSupplier.Supplier_TelColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsProduct_TypeNull() {
-                return this.IsNull(this.tableSupplier.Product_TypeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetProduct_TypeNull() {
-                this[this.tableSupplier.Product_TypeColumn] = global::System.Convert.DBNull;
+            public void SetConfirmedNull() {
+                this[this.tableSupplierSentList.ConfirmedColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -779,22 +690,22 @@ namespace GreenwitchButchersApp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class SupplierRowChangeEvent : global::System.EventArgs {
+        public class SupplierSentListRowChangeEvent : global::System.EventArgs {
             
-            private SupplierRow eventRow;
+            private SupplierSentListRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierRowChangeEvent(SupplierRow row, global::System.Data.DataRowAction action) {
+            public SupplierSentListRowChangeEvent(SupplierSentListRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SupplierRow Row {
+            public SupplierSentListRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -810,7 +721,7 @@ namespace GreenwitchButchersApp {
         }
     }
 }
-namespace GreenwitchButchersApp.SuppliersDataSetTableAdapters {
+namespace GreenwitchButchersApp.SupplierSentListDataSetTableAdapters {
     
     
     /// <summary>
@@ -822,7 +733,7 @@ namespace GreenwitchButchersApp.SuppliersDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SupplierTableAdapter : global::System.ComponentModel.Component {
+    public partial class SupplierSentListTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -836,7 +747,7 @@ namespace GreenwitchButchersApp.SuppliersDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public SupplierTableAdapter() {
+        public SupplierSentListTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -933,47 +844,49 @@ namespace GreenwitchButchersApp.SuppliersDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Supplier";
+            tableMapping.DataSetTable = "SupplierSentList";
+            tableMapping.ColumnMappings.Add("SupplierSentListId", "SupplierSentListId");
             tableMapping.ColumnMappings.Add("SupplierID", "SupplierID");
-            tableMapping.ColumnMappings.Add("Supplier_Name", "Supplier_Name");
-            tableMapping.ColumnMappings.Add("Supplier_Address", "Supplier_Address");
-            tableMapping.ColumnMappings.Add("Supplier_Postcode", "Supplier_Postcode");
-            tableMapping.ColumnMappings.Add("Supplier_Tel", "Supplier_Tel");
-            tableMapping.ColumnMappings.Add("Product_Type", "Product_Type");
+            tableMapping.ColumnMappings.Add("OrderID", "OrderID");
+            tableMapping.ColumnMappings.Add("Confirmed", "Confirmed");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Supplier] WHERE (([SupplierID] = @Original_SupplierID) AND ((@" +
-                "IsNull_Supplier_Postcode = 1 AND [Supplier_Postcode] IS NULL) OR ([Supplier_Post" +
-                "code] = @Original_Supplier_Postcode)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[SupplierSentList] WHERE (([SupplierSentListId] = @Original_SupplierSentListId) AND ((@IsNull_SupplierID = 1 AND [SupplierID] IS NULL) OR ([SupplierID] = @Original_SupplierID)) AND ((@IsNull_OrderID = 1 AND [OrderID] IS NULL) OR ([OrderID] = @Original_OrderID)) AND ((@IsNull_Confirmed = 1 AND [Confirmed] IS NULL) OR ([Confirmed] = @Original_Confirmed)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierSentListId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierSentListId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SupplierID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Supplier_Postcode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Postcode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Supplier_Postcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Postcode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OrderID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Confirmed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Confirmed", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Confirmed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Confirmed", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Supplier] ([Supplier_Name], [Supplier_Address], [Supplier_Postcode], [Supplier_Tel], [Product_Type]) VALUES (@Supplier_Name, @Supplier_Address, @Supplier_Postcode, @Supplier_Tel, @Product_Type);
-SELECT SupplierID, Supplier_Name, Supplier_Address, Supplier_Postcode, Supplier_Tel, Product_Type FROM Supplier WHERE (SupplierID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[SupplierSentList] ([SupplierID], [OrderID], [Confirmed]) VALUE" +
+                "S (@SupplierID, @OrderID, @Confirmed);\r\nSELECT SupplierSentListId, SupplierID, O" +
+                "rderID, Confirmed FROM SupplierSentList WHERE (SupplierSentListId = SCOPE_IDENTI" +
+                "TY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Postcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Postcode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Tel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Tel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Product_Type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Product_Type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Confirmed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Confirmed", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Supplier] SET [Supplier_Name] = @Supplier_Name, [Supplier_Address] = @Supplier_Address, [Supplier_Postcode] = @Supplier_Postcode, [Supplier_Tel] = @Supplier_Tel, [Product_Type] = @Product_Type WHERE (([SupplierID] = @Original_SupplierID) AND ((@IsNull_Supplier_Postcode = 1 AND [Supplier_Postcode] IS NULL) OR ([Supplier_Postcode] = @Original_Supplier_Postcode)));
-SELECT SupplierID, Supplier_Name, Supplier_Address, Supplier_Postcode, Supplier_Tel, Product_Type FROM Supplier WHERE (SupplierID = @SupplierID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[SupplierSentList] SET [SupplierID] = @SupplierID, [OrderID] = @OrderID, [Confirmed] = @Confirmed WHERE (([SupplierSentListId] = @Original_SupplierSentListId) AND ((@IsNull_SupplierID = 1 AND [SupplierID] IS NULL) OR ([SupplierID] = @Original_SupplierID)) AND ((@IsNull_OrderID = 1 AND [OrderID] IS NULL) OR ([OrderID] = @Original_OrderID)) AND ((@IsNull_Confirmed = 1 AND [Confirmed] IS NULL) OR ([Confirmed] = @Original_Confirmed)));
+SELECT SupplierSentListId, SupplierID, OrderID, Confirmed FROM SupplierSentList WHERE (SupplierSentListId = @SupplierSentListId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Postcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Postcode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Supplier_Tel", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Tel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Product_Type", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Product_Type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OrderID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Confirmed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Confirmed", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierSentListId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierSentListId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SupplierID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SupplierID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Supplier_Postcode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Postcode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Supplier_Postcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Supplier_Postcode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OrderID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OrderID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Confirmed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Confirmed", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Confirmed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Confirmed", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SupplierSentListId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "SupplierSentListId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -986,25 +899,19 @@ SELECT SupplierID, Supplier_Name, Supplier_Address, Supplier_Postcode, Supplier_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT SupplierID, Supplier_Name, Supplier_Address, Supplier_Postcode, Supplier_T" +
-                "el, Product_Type FROM dbo.Supplier";
+            this._commandCollection[0].CommandText = "SELECT SupplierSentListId, SupplierID, OrderID, Confirmed FROM dbo.SupplierSentLi" +
+                "st";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT      Supplier.SupplierID, Supplier.Supplier_Name, Supplier.Supplier_Address, Supplier.Supplier_Postcode, Supplier.Supplier_Tel, Supplier.Product_Type
-FROM          Supplier INNER JOIN
-                        SupplierSentList ON Supplier.SupplierID = SupplierSentList.SupplierID";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(SuppliersDataSet.SupplierDataTable dataTable) {
+        public virtual int Fill(SupplierSentListDataSet.SupplierSentListDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1017,9 +924,9 @@ FROM          Supplier INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual SuppliersDataSet.SupplierDataTable GetData() {
+        public virtual SupplierSentListDataSet.SupplierSentListDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            SuppliersDataSet.SupplierDataTable dataTable = new SuppliersDataSet.SupplierDataTable();
+            SupplierSentListDataSet.SupplierSentListDataTable dataTable = new SupplierSentListDataSet.SupplierSentListDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1027,28 +934,15 @@ FROM          Supplier INNER JOIN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(SuppliersDataSet.SupplierDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(SuppliersDataSet.SupplierDataTable dataTable) {
+        public virtual int Update(SupplierSentListDataSet.SupplierSentListDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(SuppliersDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Supplier");
+        public virtual int Update(SupplierSentListDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "SupplierSentList");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1070,15 +964,31 @@ FROM          Supplier INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_SupplierID, string Original_Supplier_Postcode) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_SupplierID));
-            if ((Original_Supplier_Postcode == null)) {
+        public virtual int Delete(int Original_SupplierSentListId, global::System.Nullable<int> Original_SupplierID, global::System.Nullable<int> Original_OrderID, global::System.Nullable<int> Original_Confirmed) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_SupplierSentListId));
+            if ((Original_SupplierID.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_SupplierID.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
+            if ((Original_OrderID.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_OrderID.Value));
+            }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Supplier_Postcode));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Confirmed.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_Confirmed.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1100,36 +1010,24 @@ FROM          Supplier INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Supplier_Name, string Supplier_Address, string Supplier_Postcode, string Supplier_Tel, string Product_Type) {
-            if ((Supplier_Name == null)) {
+        public virtual int Insert(global::System.Nullable<int> SupplierID, global::System.Nullable<int> OrderID, global::System.Nullable<int> Confirmed) {
+            if ((SupplierID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(SupplierID.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Supplier_Name));
+            if ((OrderID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(OrderID.Value));
             }
-            if ((Supplier_Address == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Supplier_Address));
+            if ((Confirmed.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Confirmed.Value));
             }
-            if ((Supplier_Postcode == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Supplier_Postcode));
-            }
-            if ((Supplier_Tel == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Supplier_Tel));
-            }
-            if ((Product_Type == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Product_Type));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1151,47 +1049,51 @@ FROM          Supplier INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Supplier_Name, string Supplier_Address, string Supplier_Postcode, string Supplier_Tel, string Product_Type, int Original_SupplierID, string Original_Supplier_Postcode, int SupplierID) {
-            if ((Supplier_Name == null)) {
+        public virtual int Update(global::System.Nullable<int> SupplierID, global::System.Nullable<int> OrderID, global::System.Nullable<int> Confirmed, int Original_SupplierSentListId, global::System.Nullable<int> Original_SupplierID, global::System.Nullable<int> Original_OrderID, global::System.Nullable<int> Original_Confirmed, int SupplierSentListId) {
+            if ((SupplierID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(SupplierID.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Supplier_Name));
+            if ((OrderID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(OrderID.Value));
             }
-            if ((Supplier_Address == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Supplier_Address));
+            if ((Confirmed.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Confirmed.Value));
             }
-            if ((Supplier_Postcode == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Supplier_Postcode));
-            }
-            if ((Supplier_Tel == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Supplier_Tel));
-            }
-            if ((Product_Type == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_SupplierSentListId));
+            if ((Original_SupplierID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_SupplierID.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Product_Type));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_SupplierID));
-            if ((Original_Supplier_Postcode == null)) {
+            if ((Original_OrderID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_OrderID.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Supplier_Postcode));
+            if ((Original_Confirmed.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Confirmed.Value));
             }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(SupplierID));
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(SupplierSentListId));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1212,8 +1114,8 @@ FROM          Supplier INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Supplier_Name, string Supplier_Address, string Supplier_Postcode, string Supplier_Tel, string Product_Type, int Original_SupplierID, string Original_Supplier_Postcode) {
-            return this.Update(Supplier_Name, Supplier_Address, Supplier_Postcode, Supplier_Tel, Product_Type, Original_SupplierID, Original_Supplier_Postcode, Original_SupplierID);
+        public virtual int Update(global::System.Nullable<int> SupplierID, global::System.Nullable<int> OrderID, global::System.Nullable<int> Confirmed, int Original_SupplierSentListId, global::System.Nullable<int> Original_SupplierID, global::System.Nullable<int> Original_OrderID, global::System.Nullable<int> Original_Confirmed) {
+            return this.Update(SupplierID, OrderID, Confirmed, Original_SupplierSentListId, Original_SupplierID, Original_OrderID, Original_Confirmed, Original_SupplierSentListId);
         }
     }
     
@@ -1229,7 +1131,7 @@ FROM          Supplier INNER JOIN
         
         private UpdateOrderOption _updateOrder;
         
-        private SupplierTableAdapter _supplierTableAdapter;
+        private SupplierSentListTableAdapter _supplierSentListTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1251,12 +1153,12 @@ FROM          Supplier INNER JOIN
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public SupplierTableAdapter SupplierTableAdapter {
+        public SupplierSentListTableAdapter SupplierSentListTableAdapter {
             get {
-                return this._supplierTableAdapter;
+                return this._supplierSentListTableAdapter;
             }
             set {
-                this._supplierTableAdapter = value;
+                this._supplierSentListTableAdapter = value;
             }
         }
         
@@ -1279,9 +1181,9 @@ FROM          Supplier INNER JOIN
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._supplierTableAdapter != null) 
-                            && (this._supplierTableAdapter.Connection != null))) {
-                    return this._supplierTableAdapter.Connection;
+                if (((this._supplierSentListTableAdapter != null) 
+                            && (this._supplierSentListTableAdapter.Connection != null))) {
+                    return this._supplierSentListTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1296,7 +1198,7 @@ FROM          Supplier INNER JOIN
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._supplierTableAdapter != null)) {
+                if ((this._supplierSentListTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1308,14 +1210,14 @@ FROM          Supplier INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(SuppliersDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(SupplierSentListDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._supplierTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Supplier.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._supplierSentListTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.SupplierSentList.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._supplierTableAdapter.Update(updatedRows));
+                    result = (result + this._supplierSentListTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1327,13 +1229,13 @@ FROM          Supplier INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(SuppliersDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(SupplierSentListDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._supplierTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Supplier.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._supplierSentListTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.SupplierSentList.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._supplierTableAdapter.Update(addedRows));
+                    result = (result + this._supplierSentListTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1345,13 +1247,13 @@ FROM          Supplier INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(SuppliersDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(SupplierSentListDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._supplierTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Supplier.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._supplierSentListTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.SupplierSentList.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._supplierTableAdapter.Update(deletedRows));
+                    result = (result + this._supplierSentListTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1387,15 +1289,15 @@ FROM          Supplier INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(SuppliersDataSet dataSet) {
+        public virtual int UpdateAll(SupplierSentListDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._supplierTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._supplierTableAdapter.Connection) == false))) {
+            if (((this._supplierSentListTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._supplierSentListTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1431,13 +1333,13 @@ FROM          Supplier INNER JOIN
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._supplierTableAdapter != null)) {
-                    revertConnections.Add(this._supplierTableAdapter, this._supplierTableAdapter.Connection);
-                    this._supplierTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._supplierTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._supplierTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._supplierTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._supplierTableAdapter.Adapter);
+                if ((this._supplierSentListTableAdapter != null)) {
+                    revertConnections.Add(this._supplierSentListTableAdapter, this._supplierSentListTableAdapter.Connection);
+                    this._supplierSentListTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._supplierSentListTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._supplierSentListTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._supplierSentListTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._supplierSentListTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1498,9 +1400,9 @@ FROM          Supplier INNER JOIN
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._supplierTableAdapter != null)) {
-                    this._supplierTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._supplierTableAdapter]));
-                    this._supplierTableAdapter.Transaction = null;
+                if ((this._supplierSentListTableAdapter != null)) {
+                    this._supplierSentListTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._supplierSentListTableAdapter]));
+                    this._supplierSentListTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
